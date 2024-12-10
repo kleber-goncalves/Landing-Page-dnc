@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabecanho {
+  display: flex;
+  margin: 0%;
+  height: 100%;
+  padding-bottom: 160px;
+  background-image: url(../img/fundo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+}
+
+#logo-dnc {
+  display: flex;
+  width: 125px;
+  height: 62px;
+  margin-left: 56px;
+  margin-top: 52px;
+}
+
+#titulo {
+  display: flex;
+  margin-left: -30px;
+  margin-top: 200px;
+}
+
+#subtitulo {
+  display: flex;
+  margin-left: -410px;
+  margin-top: 320px;
+}
+
+#sessao-informativo {
+  background: #eaece5;
+  display: grid;
+  grid-auto-flow: column;
+  columns: auto;
+}
+
+.icons {
+  margin-left: 120px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.txt {
+  display: flex;
+  align-items: center;
+}
+
+#sessao-video {
+  display: grid;
+  grid-auto-flow: column;
+  columns: auto;
+}
+
+#video {
+  display: flex;
+  margin-left: 143px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+#txt-video {
+  color: #247ba0;
+  margin-left: -90px;
+  display: flex;
+  margin-top: 130px;
+}
+
+#sub-txt-video {
+  margin-top: 50px;
+  margin-left: -90px;
+  display: flex;
+}
+
+#carrosel {
+  padding: 50px;
+  background-color: #247ba0;
+}
+
+#txt-carrosel {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#cars-carrosel {
+  display: grid;
+  grid-auto-flow: column;
+  columns: auto;
+}
+
+.cars {
+  margin-top: 70px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+#samanta {
+  display: none;
+}
+
+#seta-direita {
+  cursor: pointer;
+  margin-top: 120px;
+}
+
+#seta-direita:hover {
+  transform: translateX(-40px);
+  transition: 0.7s all;
+}
+
+#seta-esquerda {
+  cursor: pointer;
+  margin-top: 120px;
+}
+
+#seta-esquerda:hover {
+  transform: translateX(40px);
+  transition: 0.7s all;
+}
+
+#form {
+  padding: 50px;
+}
+
+#txt-form {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+input {
+  margin-top: 20px;
+  margin-left: 460px;
+  width: 410px;
+  height: 50px;
+  background-color: #eaece5;
+  border: 0px;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+
+button {
+    background: #247BA0;
+
+}

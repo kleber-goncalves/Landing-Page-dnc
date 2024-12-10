@@ -1,0 +1,10 @@
+* {
+  margin: 0px;
+}
+
+#cabecanho {
+  display: flex;
+  width: 50;
+  height: 50px;
+  background-image: url(../img/fundo.svg);
+}

@@ -1,0 +1,13 @@
+* {
+  margin: 0px;
+
+}
+
+#cabecanho {
+    background-image: url(../img/fundo.svg);
+    color: aliceblue;
+}
+
+#logo-dnc{
+    width: 250px;
+}

@@ -1,0 +1,10 @@
+* {
+  margin: 0px;
+  background-image: url(../img/fundo.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#cabecanho{
+height: 30px;
+}
