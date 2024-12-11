@@ -1,13 +1,26 @@
+/* Reset */
 * {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos globais responsivos */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 #cabecanho {
   display: flex;
-  margin: 0%;
-  height: 100%;
-  padding-bottom: 160px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
   background-image: url(../img/fundo.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,11 +28,9 @@
 }
 
 #logo-dnc {
-  display: flex;
-  width: 125px;
-  height: 62px;
-  margin-left: 56px;
-  margin-top: 52px;
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 #titulo {
@@ -163,14 +174,12 @@ button {
 
 .button:focus {
   outline: none;
-  box-shadow: #010177 0 0 0 1.5px inset, rgba(29, 164, 237, 0.3) 0 2px 4px,
-    rgba(0, 189, 251, 0.2) 0 7px 13px -3px, #004367 0 -3px 0 inset;
+  box-shadow: #010177 0 0 0 1.5px inset, rgba(29, 164, 237, 0.3) 0 2px 4px, rgba(0, 189, 251, 0.2) 0 7px 13px -3px, #004367 0 -3px 0 inset;
 }
 
-button:hover {
-  box-shadow: rgba(29, 164, 237, 0.3) 0 4px 8px,
-    rgba(0, 189, 251, 0.2) 0 7px 13px -3px, #004367 0 -3px 0 inset;
-  transform: translateY(-2px);
+button:hover{
+  box-shadow: rgba(29, 164, 237, 0.3) 0 4px 8px, rgba(0, 189, 251, 0.2) 0 7px 13px -3px, #004367 0 -3px 0 inset;
+  transform: translateY(-2px)
 }
 
 .button:active {

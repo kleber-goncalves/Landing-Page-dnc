@@ -158,22 +158,108 @@ button {
   margin-bottom: 50px;
   cursor: pointer;
   overflow: hidden;
-  touch-action: manipulation;
+    touch-action: manipulation;
 }
 
 .button:focus {
   outline: none;
-  box-shadow: #010177 0 0 0 1.5px inset, rgba(29, 164, 237, 0.3) 0 2px 4px,
-    rgba(0, 189, 251, 0.2) 0 7px 13px -3px, #004367 0 -3px 0 inset;
+  box-shadow: #010177 0 0 0 1.5px inset, rgba(29, 164, 237, 0.3) 0 2px 4px, rgba(0, 189, 251, 0.2) 0 7px 13px -3px, #004367 0 -3px 0 inset;
 }
 
-button:hover {
-  box-shadow: rgba(29, 164, 237, 0.3) 0 4px 8px,
-    rgba(0, 189, 251, 0.2) 0 7px 13px -3px, #004367 0 -3px 0 inset;
-  transform: translateY(-2px);
+button:hover{
+  box-shadow: rgba(29, 164, 237, 0.3) 0 4px 8px, rgba(0, 189, 251, 0.2) 0 7px 13px -3px, #004367 0 -3px 0 inset;
+  transform: translateY(-2px)
 }
 
 .button:active {
   box-shadow: #012a38 0 3px 7px inset;
   transform: translateY(3px);
+}
+
+/* Para telas pequenas, como smartphones */
+@media (max-width: 768px) {
+  #cabecalho {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  #logo-dnc {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  #titulo {
+    margin-left: 0;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  #subtitulo {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #sessao-informativo {
+    grid-template-columns: 1fr;
+  }
+
+  .icons {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #video {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  #txt-video, #sub-txt-video {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #cars-carrosel {
+    grid-template-columns: 1fr;
+  }
+
+  input {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  button {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+/* Para telas médias, como tablets */
+@media (max-width: 1024px) {
+  #cabecalho {
+    padding-bottom: 120px;
+  }
+
+  #titulo {
+    margin-left: -15px;
+    text-align: center;
+  }
+
+  #subtitulo {
+    margin-left: -30px;
+  }
+
+  #sessao-informativo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icons {
+    margin-left: 60px;
+  }
+
+  #cars-carrosel {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -1,0 +1,86 @@
+/* Estilos globais responsivos */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+#cabecanho {
+  flex-direction: column; /* Empilhar elementos no mobile */
+  align-items: center;
+  text-align: center;
+  padding: 20px; /* Espaçamento interno para telas menores */
+  background-position: center;
+}
+
+/* Estilos do título e subtítulo */
+#titulo, #subtitulo {
+  margin: 20px 0;
+  text-align: center; /* Centralizar o texto */
+}
+
+#sessao-informativo {
+  grid-template-columns: 1fr; /* Alinhar em coluna no mobile */
+  text-align: center; /* Centralizar conteúdo */
+  padding: 20px;
+}
+
+/* Ajuste de video */
+#sessao-video iframe {
+  width: 90%; /* Ocupa 90% da largura disponível */
+  max-width: 600px; /* Limita largura máxima */
+  height: auto; /* Mantém proporção */
+}
+
+#info-video {
+  margin: 20px 0;
+  text-align: center; /* Centralizar texto */
+}
+
+/* Estilos para o carrossel */
+#cars-carrosel {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Reorganiza dinamicamente */
+  gap: 20px;
+  justify-items: center;
+}
+
+#seta-direita, #seta-esquerda {
+  display: none; /* Esconde setas em telas menores */
+}
+
+/* Formulário */
+input {
+  width: 90%; /* Largura adaptável */
+  max-width: 500px;
+  margin: 10px auto;
+  display: block; /* Centralizar */
+}
+
+button {
+  width: 90%; /* Adaptável */
+  max-width: 400px;
+  margin: 20px auto;
+  display: block; /* Centralizar */
+}
+
+/* Media Queries específicas */
+@media (min-width: 768px) {
+  #cabecanho {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  #sessao-informativo {
+    grid-template-columns: repeat(3, 1fr); /* Três colunas para telas maiores */
+    text-align: left; /* Texto alinhado à esquerda */
+  }
+
+  #cars-carrosel {
+    grid-template-columns: auto auto auto auto auto; /* Mantém layout fixo */
+  }
+
+  #seta-direita, #seta-esquerda {
+    display: block; /* Mostra setas em telas maiores */
+  }
+}
